@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="60dp">
+
+        <TextView
+            android:id="@+id/hiddenCardId2"
+            android:layout_alignParentBottom="false"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cardId" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_plane_name2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/input_plane_name2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/plane_name"
+                android:maxLines="1" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/input_layout_plane_type2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_layout_plane_name2">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/input_plane_type2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/plane_type"
+                android:maxLines="1" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/plane_class_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_layout_plane_type2"
+            android:layout_alignParentLeft="true"
+            android:text="@string/plane_class_textview"/>
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:background="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/plane_class_text2"
+            android:layout_below="@id/input_layout_plane_type2"
+            ></Spinner>
+
+        <TextView
+            android:id="@+id/fuel_style2"
+            android:layout_width="wrap_content"
+            android:paddingTop="16dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plane_class_text2"
+            android:layout_alignParentLeft="true"
+            android:text="@string/fueling_type_textview"/>
+
+        <RadioGroup
+            android:id="@+id/radio4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/fuel_style2"
+            android:layout_below="@id/plane_class_text2"
+            android:paddingTop="10dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radioGravity2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Gravity" />
+            <RadioButton
+                android:id="@+id/radioPressure2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Pressure"/>
+
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/jol2"
+            android:layout_below="@id/fuel_style2"
+            android:layout_alignParentLeft="true"
+            android:paddingTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Is the plane a:"/>
+
+        <RadioGroup
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/jol2"
+            android:layout_below="@id/fuel_style2"
+            android:paddingTop="10dp"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radioJet2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Jet" />
+            <RadioButton
+                android:id="@+id/radioLowLead2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Low_Lead"/>
+        </RadioGroup>
+
+
+
+        <EditText
+            android:id="@+id/plane_notes2"
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/radio4"
+            android:gravity="top|left"
+            android:hint="@string/plane_user_notes">
+        </EditText>
+
+
+        <Button
+            android:id="@+id/save_button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="-20dp"
+            android:layout_marginRight="-20dp"
+            android:background="@color/colorPrimary"
+            android:text="@string/save_button"/>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

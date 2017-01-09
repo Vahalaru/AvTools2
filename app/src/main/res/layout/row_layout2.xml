@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:foreground="?android:selectableItemBackground"
+    app:cardCornerRadius="@dimen/activity_vertical_margin"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/AvGasBlue"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/hiddenCardId"
+            android:layout_alignParentBottom="false"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cardId" />
+
+        <TextView
+            android:id="@+id/Plname"
+            android:layout_width="wrap_content"
+            android:transitionName="tpname"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/whiteText"
+            android:textStyle="bold"
+            android:text="Pname"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/Pltype"
+            android:transitionName="tptype"
+            android:layout_below="@+id/Plname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/whiteText"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Ptype" />
+
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

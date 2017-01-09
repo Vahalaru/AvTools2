@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">AvTools</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="plane_name">Plane Model</string>
+    <string name="plane_type">Plane Type</string>
+    <string name="max_fuel">Max Fuel</string>
+    <string name="plane_class_textview">Class:</string>
+    <string name="fueling_type_textview">Fueling Style:</string>
+    <string name="plane_user_notes">Notes</string>
+    <string name="save_button">Save</string>
+    <string name="action_settings">Settings</string>
+    <string name="idcalitext">Current Calibration:</string>
+    <string name="idgpumped">Gallons Pumped:</string>
+    <string name="Jet">Jet</string>
+    <string name="Low_Lead">Low Lead</string>
+    <string name="Gravity">Gravity</string>
+    <string name="Pressure">Pressure</string>
+    <string name="search">Search</string>
+
+    <string-array name="stupid_array">
+
+        <item>pProfileName</item>
+        <item>pProfileType</item>
+
+    </string-array>
+
+    <string name="wind_transition_pname">transitPName</string>
+    <string name="wind_transition_ptype">transitPType</string>
+    <string name="action_search">Search</string>
+    <string-array name="plane_class_spinner_data">
+
+        <item>Single</item>
+        <item>Single Turbo Prop</item>
+        <item>Turbo Prop</item>
+        <item>Heavy Turbo Prop</item>
+        <item>Narrow Body</item>
+        <item>Wide Body</item>
+        <item>Light Twin</item>
+        <item>Heavy Twin</item>
+        <item>Very Light Jet</item>
+        <item>Light Jet</item>
+        <item>Medium Jet</item>
+        <item>Heavy Jet</item>
+        <item>Extra Heavy Jet</item>
+
+    </string-array>
+    <string-array name="fueling_styles">
+
+        <item>Gravity</item>
+        <item>Pressure</item>
+
+    </string-array>
+
+    <string-array name="jetorlow">
+
+        <item>Jet</item>
+        <item>LowLead</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/plane_add_background"
+    tools:context="com.example.jerem.avtools.Open_plane">
+
+    <ScrollView
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/header_cover_image"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="centerInside"
+                android:background="@color/header_background"
+                android:src="@drawable/avtoolsbanner" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_below="@id/header_cover_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="-60dp"
+                android:elevation="5dp"
+                android:padding="20dp"
+                android:background="@drawable/circle2"
+                android:src="@drawable/ic_default_plane_profile" />
+
+            <RelativeLayout
+                android:id="@+id/profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header_cover_image"
+                android:background="#ebca0707"
+                android:elevation="4dp"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:id="@+id/numPUsed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:transitionName="tpname"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="72dp"
+                    android:text="Prist Used"
+                    android:textColor="#fff"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/numPleft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:transitionName="tptype"
+                    android:layout_below="@+id/numPUsed"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Prist Left"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:textSize="22sp" />
+
+            </RelativeLayout>
+
+            <!-- android:layout_below="@id/profile_layout"-->
+
+            <RelativeLayout
+                android:layout_below="@id/profile_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/opstyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="#fff"
+                            android:elevation="4dp"
+                            android:padding="20dp"
+                            android:gravity="center_horizontal"
+                            android:layout_weight="2"
+                            android:text="Enter Gallons Pumped" />
+
+                        <EditText
+                            android:id="@+id/numGal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="#fff"
+                            android:elevation="4dp"
+                            android:padding="20dp"
+                            android:gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:inputType="number"
+                            android:hint="125" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="12dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="#fff"
+                            android:elevation="4dp"
+                            android:padding="20dp"
+                            android:gravity="center_horizontal"
+                            android:layout_weight="2"
+                            android:text="Enter Prist Left Before Pumping" />
+
+                        <EditText
+                            android:id="@+id/numPrist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:background="#fff"
+                            android:elevation="4dp"
+                            android:padding="20dp"
+                            android:gravity="center_horizontal"
+                            android:inputType="numberDecimal"
+                            android:layout_weight="1"
+                            android:hint="14.483" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnSolve"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:textColor="@color/whiteText"
+                        android:text="Calculate"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>
